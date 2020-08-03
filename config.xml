@@ -20,8 +20,7 @@
   <plugin name="cordova-plugin-file" source="npm" spec="~6.0.2" />
   <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.1" />
   
-  <plugin name="cordova-plugin-firebase-analytics" source="npm" spec="~4.3.0" />
-  <plugin name="cordova-plugin-firebase-messaging" source="npm" spec="~4.4.0" />
+ 
   
   
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.0" />
