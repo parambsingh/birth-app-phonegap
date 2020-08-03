@@ -43,9 +43,7 @@
     
     <platform name="android">
         <allow-intent href="market:*" />
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-		</edit-config>
-		<resource-file src="google-services.json" target="google-services.json" />
+        <resource-file src="google-services.json" />
 		<icon src="res/icon/android/ldpi.png" density="ldpi" />
         <icon src="res/icon/android/mdpi.png" density="mdpi" />
         <icon src="res/icon/android/hdpi.png" density="hdpi" />
