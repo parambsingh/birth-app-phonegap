@@ -19,14 +19,14 @@
   <plugin name="cordova-plugin-camera" source="npm" spec="~4.1.0" />
   <plugin name="cordova-plugin-device" source="npm" spec="~2.0.3" />
   
-  <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.1" />
+  <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.0" />
   
-<!--
-  <plugin name="cordova-plugin-file" source="npm" spec="~6.0.2" />
+
+  <plugin name="cordova-plugin-file" source="npm" spec="~6.0.1" />
   
   
 
-  
+<!--  
   <plugin name="cordova-plugin-firebase-analytics" source="npm" spec="~4.3.0" />
   <plugin name="cordova-plugin-firebase-messaging" source="npm" spec="~4.4.0" />
   
