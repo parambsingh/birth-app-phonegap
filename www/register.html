@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <title>In Due Season Mama - Register</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/v4-shims.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+</head>
+<body class="theme-light" data-background="none" data-highlight="red2">
+<div id="preloader">
+    <div class="spinner-border color-red1-dark" style="border-width: 1px;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div id="page">
+    <!-- Content Starts -->
+    <div class="page-content pb-0">
+        <!-- Card Starts -->
+        <div class="card" data-card-height="cover">
+            <div class="show-on-theme-light card-center text-center">
+                <h1 class="color-pink font-50 mt-0">Account Setup</h1>
+                <div class="boxed-text-xl font-18 font-400 line-height-l color-blackz ">
+                    For getting you personalized experience
+                </div>
+                <div class="content mb-0">
+                    <form action="javascript:void(0);" id="registerFrom">
+                        <input type="hidden" id="iAgreeInput" name="i_agree" value="0">
+                        <input type="hidden" id="deviceId" name="device_id" value="default">
+                        <div class="input-style has-icon input-style-1 input-required">
+                            <input type="email" id="Email" name="email" class="" placeholder="Email" autocomplete="off">
+                        </div>
+                        <div class="input-style has-icon input-style-1 input-required">
+                            <input type="password" name="password" class="" id="password" placeholder="Choose a Password"
+                                   autocomplete="off">
+                            <label for="password" class="error hide w-100">Please enter password.</label>
+                        </div>
+                        <p class="text-left pb-0 mb-n1 pt-1">
+                            <i class="fa fa-heart-o font-100 color-pink" id="iAgreeCheckBox"> </i>
+                            <span id="iAgree">I Agree to</span> <a href="terms_and_conditions.html"
+                                                                   class="text-center font-14 color2theme">Terms and
+                            Conditions</a>
+                            <label class="error hide" id="iAgreeError">Please accept terms and conditions.</label>
+                        </p>
+                        <button type="submit" class="btn btn-m font-100 rounded-l btn-center-l bg2-highlight  mt-4">
+                            Register
+                        </button>
+                        <label class="error hide w-100 text-center" id="registerErrorMsg"></label>
+                        <p class="text-center pb-0 mb-n1 pt-1">
+                            <a href="login.html"  class="text-center font-14 color2theme">
+                                Have an account? Login
+                            </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!-- Lotus Animation Starts -->
+            <div class="card-overlay bg-theme opacity-10"></div>
+            <div class="card-overlay-infinite preload-img blendoptionfixed" data-src=""></div>
+            <!-- Lotus Animation Ends -->
+        </div>
+    </div>
+    <!-- Card Ends -->
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="scripts/register.js"></script>
+</body>
+</html>

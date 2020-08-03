@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <title>In Due Season Mama - Diary</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/v4-shims.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <style>
+        .egg{border-radius: 0% 0% 100% 100% / 00% 0% 0% 0%;}
+        .page-content{padding-bottom: 0px;}
+    </style>
+</head>
+<body class="theme-light" data-background="none" data-highlight="red2">
+<div id="preloader">
+    <div class="spinner-border color-red1-dark" style="border-width: 1px;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div id="page">
+    <div class="header header-fixed header-logo-center">
+        <a href="dashboard.html" class="header-title"></a>
+        <a href="tools.html" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="javascript:void(0);" onclick="getImage();" class="header-icon header-icon-4"
+           style="margin-right: 50px;"><i class="fa fa-image"></i></a>
+        <a href="javascript:void(0);" onclick="capturePhotoEdit();" class="header-icon header-icon-4"><i
+                class="fa fa-camera"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-4" style="z-index: 999999">
+        <a href="dashboard.html"><i class="fa my-preg"></i><span>My Pregnancy</span></a>
+        <a href="tools.html"><i class="fa tools"></i><span>Tools/Articles</span></a>
+        <a href="gallery.html" class=""><i class="fa diary-active"></i><span>Your Diary</span><strong></strong></a>
+        <a href="#" data-menu="menu-settings">
+            <i class="fa more"></i><span>More</span>
+        </a>
+    </div>
+    <!--<div class="page-content header-clear-medium">-->
+    <div class="page-content">
+        <div class="card card-style egg">
+            <div class="content mb-3">
+                <h1 class="color-pink font-50 mt-5 pt-3 text-center">Diary</h1>
+                <p>
+                    Post pictures or notes with time stamps. are as thin as thread! Post pictures or notes with time
+                    stamps. are as thin as thread! Soft like wool. My bones are also soft and thzin. In a manner of a
+                    few months, like rock! :)
+                </p>
+
+                <div class="show-on-theme-light text-center mt-5" style=" z-index: 9999999;display:none;" id="captureImageSection" >
+                    <h4 class="color-pink font-24 mt-0">Choose Image</h4>
+                    <div class="content mb-0">
+                        <div class="row text-center mb-0 p-2">
+                            <a href="javascript:void(0);" class="col-6 pl-0" onclick="getImage();">
+                                <div class="rounded ml-2 mb-3 p-2" style="background: #ffffff">
+                                    <i class="fa fa-image color-highlight fa-3x mt-5"></i>
+                                    <h2 class="pt-4 color-pink">Gallery</h2>
+                                    <p class="font-11 opacity-50 mt-3">Tap to select image</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" onclick="capturePhotoEdit();" class="col-6 pr-0">
+                                <div class="rounded mr-2 mb-3 p-2" style="background: #ffffff">
+                                    <i class="fa fa-camera color-magenta2-dark fa-3x mt-5"></i>
+                                    <h2 class="pt-4 color-pink">Camera</h2>
+                                    <p class="font-11 opacity-50 mt-3">Tap to capture image</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+
+                <div class="row text-center mb-0" id="uploadImageSection" style="display:none;">
+                    <div class="col-12 text-center mb-4">
+                        <form id="userDiaryForm" action="javascript:void(0);">
+                            <input type="hidden" name="user_diary_id" value="0" id="userDiaryId">
+                            <img style="display:none; height: 200px; margin: auto;" id="selectedImage" src=""
+                                 class="preload-img img-fluid rounded-xs" alt="img">
+
+                            <input type="text" name="note" id="Note" class="form-control mt-3" placeholder="Image Note"
+                                   value="">
+                            <label class="error hide" id="noteError">Please enter image note.</label>
+                            <a href="javascript:void(0);" id="SaveImage"
+                               class="btn btn-m font-100 rounded-l btn-center-l bg3-highlight  mt-4 color-pink">Save
+                                Image</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="row text-center row-cols-2 mb-0" id="imagesSection">
+
+                </div>
+                <br /><br /><br />
+            </div>
+        </div>
+        <!-- div class=" card-style">
+            <div class="content mb-3">
+                <h2 class="text-center mt-2 color-highlight">Weekly Tips</h2>
+                <p>
+                    My ribs are as thin as thread! Soft like wool. My bones are also soft and thin. In a manner of a few
+                    months, my bones will be stronger and my ribs will grow to become like a hard like rock! :)
+                </p>
+            </div>
+        </div -->
+    </div>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/gallery.js"></script>
+<div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="230"
+     data-menu-effect="menu-over">
+    <div class="mr-3 ml-3 mt-4">
+        <div class="content my-0">
+            <div class="list-group list-custom-small">
+                <a href="contraction_timer.html"><h4 class="font-900 mb-0"><i class="fa fa-clock-o"></i> Contraction
+                    Timer</h4></a>
+                <a href="profile.html"><h4 class="font-900 mb-0"><i class="fa fa-user"></i> Profile</h4></a>
+                <a href="due_date.html"><h4 class="font-900 mb-0"><i class="fa fa-calendar"></i> Due Date</h4></a>
+                <a href="javascript:void(0);" id="userLogout"><h4 class="font-900 mb-0"><i class="fa fa-sign-out"></i>
+                    Logout</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <title>In Due Season Mama - Welcome</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/v4-shims.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+</head>
+<body class="theme-light" data-background="none" data-highlight="red2">
+<div id="preloader">
+    <div class="spinner-border color-red1-dark" style="border-width: 1px;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Page Starts -->
+<div id="page">
+    <!-- Header Starts -->
+    <!--<div class="header header-fixed header-transparent header-logo-center">
+       <a href="index.html" class="header-title color-theme">In Due Season Mama</a>
+       <a href="#" data-back-button class="header-icon color-theme header-icon-1"><i class="fas fa-arrow-left"></i></a>
+       <a href="#" data-toggle-theme class="header-icon color-theme header-icon-4"><i class="fas fa-lightbulb"></i></a>
+       </div>-->
+    <!-- Header Ends -->
+    <!-- Content Starts -->
+    <div class="page-content pb-0">
+        <!-- Card Starts -->
+        <div class="card" data-card-height="cover">
+            <div class="show-on-theme-light card-center text-center">
+                <h1 class="color-pink font-50 mt-0">Welcome to Natural Mama</h1>
+                <p class="boxed-text-xl font-18 font-400 line-height-l color-black mt-3">
+                    Your personalized maternity care app, the right nutrition, tools throughout all your pregnancy.
+                    Until your special day!
+                </p>
+                <div class="rounded-ecllipe"></div>
+                <a href="register.html" class="btn btn-m font-100 rounded-l btn-center-l bg2-highlight m-top-10 hide"
+                    id="getStartedBtn">Get Started</a>
+                <a href="register.html">
+                    <p class="boxed-text-xl font-14 font-400 line-height-l color-black">
+                    I don’t know my due date
+                    </p>
+                </a>
+
+            </div>
+            <!-- Lotus Animation Starts -->
+            <div class="card-overlay bg-theme opacity-10"></div>
+            <div class="card-overlay-infinite preload-img blendoptionfixed" data-src=""></div>
+            </div>
+            <!-- Lotus Animation Ends -->
+        </div>
+        <!-- Card Ends -->
+    </div>
+    <!-- Content Ends -->
+</div>
+<!-- Page Ends -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script>
+    $(function () {
+        if (localStorage.getItem("authUser") !== null) {
+            window.location.href = "dashboard.html";
+        } else {
+            $('#getStartedBtn').show();
+        }
+    });
+</script>
+</body>
+</html>

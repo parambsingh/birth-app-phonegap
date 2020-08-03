@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <title>In Due Season Mama - Register</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/v4-shims.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+</head>
+<body class="theme-light" data-background="none" data-highlight="red2">
+<!-- Preloader Starts -->
+<div id="preloader">
+    <div class="spinner-border color-red1-dark" style="border-width: 1px;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Preloader Ends -->
+<!-- Page Starts -->
+<div id="page">
+
+    <div class="page-content pb-0">
+        <!-- Card Starts -->
+        <div class="card" data-card-height="cover">
+            <div class="show-on-theme-light text-center mt-5" style="    z-index: 9999999;">
+                <div class="boxed-text-xl font-18 font-800 line-height-l color-black ">
+                    Choose Your
+                </div>
+                <h1 class="color-pink font-50 mt-0">Due Date</h1>
+                <div class="boxed-text-xl font-18 font-400 line-height-l color2theme">
+                    When to be Mommy?
+                </div>
+                <div class="content mb-0">
+                    <!--<div class="input-style has-icon input-style-1 input-required">
+                       <input type="name" placeholder="Username">
+                       </div>-->
+
+                    <div class="input-style-1-active text-left color2theme">Enter your last day of Period</div>
+                    <div class="input-style input-style-1 input-required z-index">
+
+                        <em><i class="fa fa-calendar-o font-22 color2theme"></i></em>
+                        <em><i class="fa fa-heart-o font-8 color-pink mt-3 pl-1"></i></em>
+                        <input type="date"  id="dateOfPeriod" value="" placeholder="Select Period Date">
+                    </div>
+                    <div class="boxed-text-xl font-18 font-800 line-height-l color-black m-3">
+                        OR
+                    </div>
+                    <div class="input-style-1-active text-left color2theme">Enter date of conception</div>
+                    <div class="input-style input-style-1 input-required z-index">
+
+                        <em><i class="fa fa-calendar-o font-22 color2theme"></i></em>
+                        <em><i class="fa fa-heart-o font-8 color-pink mt-3 pl-1"></i></em>
+                        <input type="date" id="dateOfConception" value="" placeholder="Select Conception Date">
+                    </div>
+
+                    <div id="dueDateError" class="hide">
+                        <label class="error">Please select period or conception date.</label>
+                    </div>
+
+                    <div id="calculating" class="hide">
+                        Calculating ... <i class="fa fa-spin fa-spinner"></i>
+                    </div>
+
+                    <div id="dueDateBox" class="hide">
+                        <p class="text-center pb-2 mb-n1 pt-1 color2theme font-12">
+                            Based on your selection, your expected due date:
+                        </p>
+
+                        <div class="card card-style bg-gradient-pink">
+                            <div class="content">
+                                <h1 class="color-white font-50">
+
+                                </h1>
+
+                                <div class="card-top mt-3 ml-4 text-left">
+                                    <div class="color-white font-40 opacity-0 mt-3"></div>
+                                    <img class="" src="graphics/due-date-icon.png" width="60px">
+                                </div>
+                                <h1 class="color-white font-40 pt-3 ml-5" id="setDueDate"></h1>
+                                <h5 class="color-white font-14 text-uppercase text-shadow-l opacity-40"></h5>
+
+                            </div>
+                        </div>
+
+                        <a href="javascript:void(0);" id="saveDueDate" class="btn btn-m font-100 rounded-l btn-center-l bg3-highlight  mt-4 color-pink">Set Due
+                            Date</a>
+                    </div>
+                    <p class="text-center pb-0 mb-n1 pt-1">
+                        <a href="dashboard.html" class="text-center font-14 color2theme">Skip this step</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Lotus Animation Starts -->
+            <div class="card-overlay bg-theme opacity-10"></div>
+            <div class="card-overlay-infinite preload-img blendoptionfixed" data-src=""></div>
+            <!-- Lotus Animation Ends -->
+        </div>
+    </div>
+    <!-- Card Ends -->
+</div>
+<!-- Content Ends -->
+</div>
+<!-- Page Ends -->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/due_date.js"></script>
+</body>
+   

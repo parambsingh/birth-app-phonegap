@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+    <title>In Due Season Mama - Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/v4-shims.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+
+</head>
+<body class="theme-light" data-background="none" data-highlight="red2">
+<div id="preloader">
+    <div class="spinner-border color-red1-dark" style="border-width: 1px;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div id="page">
+    <div class="header header-fixed header-logo-center">
+        <a href="dashboard.html" class="header-title"></a>
+        <a href="tools.html" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <!--<a href="dashboard.html" class="header-icon header-icon-4"><i class="fa fa-sun-o"></i></a>-->
+    </div>
+
+    <div id="footer-bar" class="footer-bar-4" style="z-index: 999999">
+        <a href="dashboard.html"><i class="fa my-preg"></i><span>My Pregnancy</span></a>
+        <a href="tools.html"><i class="fa tools"></i><span>Tools/Articles</span></a>
+        <a href="gallery.html" class=""><i class="fa diary"></i><span>Your Diary</span><strong></strong></a>
+        <a href="#" data-menu="menu-settings">
+            <i class="fa more"></i><span>More</span>
+        </a>
+    </div>
+
+    <!--<div class="page-content header-clear-medium">-->
+    <div class="page-content">
+        <div class="card card-style egg mb-2">
+            <div class="content mb-3">
+                <h1 class="color-pink font-50 mt-5 pt-4 text-center">Featured Articles</h1>
+            </div>
+        </div>
+
+        <div class="card card-style bg-gradient-white" id="articlesSection">
+            <!--<h3 class="text-center mt-5" style="color: #333333">Loading... <i class="fa fa-spinner fa-spin"></i></h3>-->
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/articles.js"></script>
+</body>
+</html>
+<div id="menu-settings" class="menu menu-box-bottom menu-box-detached rounded-m" data-menu-height="230"
+     data-menu-effect="menu-over">
+    <div class="mr-3 ml-3 mt-4">
+        <div class="content my-0">
+            <div class="list-group list-custom-small">
+                <a href="contraction_timer.html"><h4 class="font-900 mb-0"><i class="fa fa-clock-o"></i> Contraction Timer</h4></a>
+                <a href="profile.html"><h4 class="font-900 mb-0"><i class="fa fa-user"></i>  Profile</h4></a>
+                <a href="due_date.html"><h4 class="font-900 mb-0"><i class="fa fa-calendar"></i>  Due Date</h4></a>
+                <a href="javascript:void(0);" id="userLogout"><h4 class="font-900 mb-0"><i class="fa fa-sign-out"></i> Logout</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
