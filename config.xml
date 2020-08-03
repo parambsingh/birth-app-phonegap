@@ -44,7 +44,6 @@
     <platform name="android">
         <allow-intent href="market:*" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-		  <application android:usesCleartextTraffic="true" />
 		</edit-config>
 		<resource-file src="google-services.json" target="app/google-services.json" />
 		<icon src="res/icon/android/ldpi.png" density="ldpi" />
@@ -53,7 +52,6 @@
         <icon src="res/icon/android/xhdpi.png" density="xhdpi" />
         <icon src="res/icon/android/xxhdpi.png" density="xxhdpi" />
         <icon src="res/icon/android/xxxhdpi.png" density="xxxhdpi" />
-
     </platform>
     
     <platform name="ios">
