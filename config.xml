@@ -16,7 +16,7 @@
   <plugin name="cordova-plugin-androidx" source="npm" spec="~2.0.0" />
   <plugin name="cordova-plugin-androidx-adapter" source="npm" spec="~1.1.1" />
   
-  <plugin name="cordova-plugin-camera" source="npm" spec=">4.1.0" />
+  <plugin name="cordova-plugin-camera" source="npm" spec="~4.1.0" />
   <plugin name="cordova-plugin-device" source="npm" spec="~2.0.3" />
   <plugin name="cordova-plugin-file" source="npm" spec="~6.0.2" />
   <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.7.1" />
@@ -31,7 +31,6 @@
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.3.4" />
   
 	<access origin="*" />
-	<plugin name="cordova-plugin-legacy-whitelist" spec="1.1.1" />
 	<access origin="http://portal.myseasonbirthapp.com/api/*" />
 	<access origin="http://portal.myseasonbirthapp.com/*" />
     <allow-intent href="http://*/*" />
